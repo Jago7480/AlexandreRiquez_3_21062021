@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,qCAAqC;AAErC,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACpC,AAAA,IAAI,CAAC;IACD,gBAAgB,EAAE,MAAM;GAC3B;;;AAGL,qCAAqC;AAErC,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACpC,AAAA,IAAI,CAAC;IACD,gBAAgB,EAAE,KAAK;GAC1B;;;AAGL,qCAAqC;AAErC,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACpC,AAAA,IAAI,CAAC;IACD,gBAAgB,EAAE,MAAM;GAC3B",
+    "sources": [
+        "index_mobile.scss"
+    ],
+    "names": [],
+    "file": "index_mobile.css"
+}

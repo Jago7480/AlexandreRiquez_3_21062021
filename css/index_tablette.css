@@ -1,0 +1,7 @@
+/* index_tablette.css - FORMAT TABLETTE */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+}
+/*# sourceMappingURL=index_tablette.css.map */
