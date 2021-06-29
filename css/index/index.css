@@ -1,4 +1,8 @@
 /* index.css - FORMAT DESKTOP */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
 }
