@@ -12,7 +12,23 @@ h1 {
 }
 
 h2 {
-  font-family: 'shrikhand';
+  font-family: 'roboto';
+}
+
+h3 {
+  font-family: 'roboto';
+}
+
+h4 {
+  font-family: 'roboto';
+}
+
+h5 {
+  font-family: 'roboto';
+}
+
+h6 {
+  font-family: 'roboto';
 }
 
 #localisation {
