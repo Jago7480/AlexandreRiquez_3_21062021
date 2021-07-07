@@ -56,6 +56,11 @@ h6
     font-family: 'roboto', sans-serif;
 }
 
+p
+{
+    font-family: 'roboto', sans-serif;
+}
+
 header
 {
     display: flex;
@@ -108,7 +113,7 @@ header
 
 .fonctionnement
 {
-    padding: 0px 20px 0px 20px;
+    padding: 50px 20px 65px 20px;
 }
 
 #title_fonctionnement
@@ -139,13 +144,14 @@ header
 .restaurant
 {
     background-color: #f6f6f6;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 65px 20px;
 }
 
 #title_restaurant
 {
     display: flex;
     justify-content: center;
+    padding: 60px 0px 0px 0px;
 }
 
 #container_panelrestaurant
