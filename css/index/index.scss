@@ -128,6 +128,18 @@ header
     justify-content: center;
 }
 
+.numero_fonctionnement
+{
+    background-color: #9356DC;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .panel_fonctionnement
 {
     display: flex;

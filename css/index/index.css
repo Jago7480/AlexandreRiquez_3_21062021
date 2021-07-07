@@ -147,6 +147,23 @@ header {
           justify-content: center;
 }
 
+.numero_fonctionnement {
+  background-color: #9356DC;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .panel_fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
