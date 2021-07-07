@@ -1,4 +1,6 @@
 /* index.css - FORMAT DESKTOP */
+@import url(/css/footer.css);
+
 *
 {
     box-sizing: border-box;
@@ -107,9 +109,18 @@ header
 .fonctionnement
 {
     padding: 0px 20px 0px 20px;
+}
+
+#title_fonctionnement
+{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+}
+
+#container_panelfonctionnement
+{
+    display: flex;
+    justify-content: center;
 }
 
 .panel_fonctionnement
@@ -122,6 +133,7 @@ header
     border-radius: 25px;
     background-color: #f6f6f6;
     box-shadow: 0px 5px 4px #cfcfcf;
+    margin: 0px 20px 0px 20px;
 }
 
 .restaurant
@@ -130,12 +142,25 @@ header
     padding: 0px 20px 0px 20px;
 }
 
+#title_restaurant
+{
+    display: flex;
+    justify-content: center;
+}
+
+#container_panelrestaurant
+{
+    display: flex;
+    justify-content: center;
+}
+
 .panel_restaurant
 {
     width: 335px;
     height: 250px;
     border-radius: 20px;
     box-shadow: 0px 5px 4px #cfcfcf;
+    margin: 0px 20px 0px 20px;
 }
 
 .img_panelrestaurant

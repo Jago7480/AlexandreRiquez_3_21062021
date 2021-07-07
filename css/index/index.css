@@ -1,4 +1,5 @@
 /* index.css - FORMAT DESKTOP */
+@import url(/css/footer.css);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -122,16 +123,24 @@ header {
 
 .fonctionnement {
   padding: 0px 20px 0px 20px;
+}
+
+#title_fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+
+#container_panelfonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .panel_fonctionnement {
@@ -150,11 +159,30 @@ header {
   background-color: #f6f6f6;
   -webkit-box-shadow: 0px 5px 4px #cfcfcf;
           box-shadow: 0px 5px 4px #cfcfcf;
+  margin: 0px 20px 0px 20px;
 }
 
 .restaurant {
   background-color: #f6f6f6;
   padding: 0px 20px 0px 20px;
+}
+
+#title_restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container_panelrestaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .panel_restaurant {
@@ -163,6 +191,7 @@ header {
   border-radius: 20px;
   -webkit-box-shadow: 0px 5px 4px #cfcfcf;
           box-shadow: 0px 5px 4px #cfcfcf;
+  margin: 0px 20px 0px 20px;
 }
 
 .img_panelrestaurant {
