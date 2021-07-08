@@ -296,12 +296,14 @@ header {
 
 .text_restaurant {
   line-height: 5px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 10px;
 }
 
 .icon_heart {
-  width: 10px;
+  width: 30px;
   color: #9356DC;
+  position: absolute;
+  margin: 10px 20px 30px 40px;
 }
 
 /* CSS FOOTER */
