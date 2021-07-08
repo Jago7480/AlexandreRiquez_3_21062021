@@ -1,5 +1,4 @@
 /* index.css - FORMAT DESKTOP */
-@import url(/css/footer.css);
 
 * 
 {
@@ -264,4 +263,42 @@ header
 {
     width: 10px;
     color: #9356DC;
+}
+
+/* CSS FOOTER */
+
+footer a
+{
+    color: white;
+}
+
+footer
+{
+    background-color: #353535;
+    color: white;
+    padding: 15px 20px 10px 20px;
+}
+
+#logo_footer
+{
+    font-size: 17px;
+    margin: 0px 0px 20px 0px;
+}
+
+#big_container_footer
+{
+    line-height: 10px;
+}
+
+.container_footer
+{
+    display: flex;
+    margin: -20px 0px -20px 0px;
+}
+
+.icon_footer
+{
+    width: 12px;
+    margin: 0px 12px 0px 0px;
+    color: white;
 }
