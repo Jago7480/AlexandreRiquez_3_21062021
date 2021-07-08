@@ -1,5 +1,5 @@
 /* index.css - FORMAT DESKTOP */
-@import url(/css/footer.css); /* Importation du footer*/
+@import url(/css/footer.css);
 
 * 
 {
@@ -79,6 +79,12 @@ header
     justify-content: center;
     align-items: center;
     box-shadow: inset 0px 5px 4px #cfcfcf;
+    transition: all 0.2s;
+}
+
+#localisation:hover
+{
+    box-shadow: inset 0px 7px 10px #b3b3b3;
 }
 
 #localisation:hover #text_localisation /* Hover du texte de localisation */
