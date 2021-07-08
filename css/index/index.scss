@@ -225,7 +225,6 @@ header
     border-radius: 20px;
     box-shadow: 0px 5px 4px #cfcfcf;
     margin: 0px 20px 0px 20px;
-    line-height: 5px;
 }
 
 .panel_restaurant:hover
@@ -257,6 +256,12 @@ header
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
+}
+
+.text_restaurant
+{
+    line-height: 5px;
+    margin: 0px 0px 0px 20px;
 }
 
 .icon_heart
