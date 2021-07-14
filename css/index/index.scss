@@ -29,7 +29,7 @@ h1
 h2
 {
     font-family: 'roboto', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 h3
@@ -114,6 +114,17 @@ header
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+#sub_title1
+{
+    margin: 0px 50px 10px 50px;
+}
+
+#sub_title2
+{
+    margin: 10px 10px 30px 10px;
 }
 
 #button_degrade
