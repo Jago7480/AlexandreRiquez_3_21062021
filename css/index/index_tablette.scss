@@ -83,7 +83,6 @@
     {
         display: flex;
         flex-wrap: nowrap;
-        // flex-wrap: wrap;
     }
 
     .panel_fonctionnement
@@ -106,21 +105,21 @@
 
     .panel_restaurant
     {
-    width: 335px;
-    height: 250px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 4px #cfcfcf;
-    margin: 20px 20px 20px 20px;
-    position: relative;
+        width: 335px;
+        height: 250px;
+        border-radius: 20px;
+        box-shadow: 0px 5px 4px #cfcfcf;
+        margin: 20px 20px 20px 20px;
+        position: relative;
     }
 
     .img_panelrestaurant
     {
-    width: 335px;
-    height: 175px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
+        width: 335px;
+        height: 175px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
     }
 
 }
