@@ -1,5 +1,151 @@
 /* menu.css - FORMAT DESKTOP */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: black;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: 'shrikhand', sans-serif;
+}
+
+h2 {
+  font-family: 'roboto', sans-serif;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: 'roboto', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+h4 {
+  font-family: 'roboto', sans-serif;
+  font-size: 16px;
+}
+
+h5 {
+  font-family: 'roboto', sans-serif;
+}
+
+h6 {
+  font-family: 'roboto', sans-serif;
+}
+
+p {
+  font-family: 'roboto', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 65px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.icon_arrow {
+  width: 20px;
+  position: absolute;
+  left: 50px;
+}
+
+.img_menu {
+  width: 100%;
+}
+
+.container_titlemenu {
+  width: 100%;
+  height: 35px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+}
+
+#titlemenu {
+  text-align: center;
+}
+
+.icon_empty_heart {
+  width: 30px;
+  color: black;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+.icon_heart {
+  width: 30px;
+  color: #9356DC;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+.heart:hover .icon_empty_heart, .heart .icon_heart {
+  display: none;
+}
+
+.heart:hover .icon_heart {
+  display: inline;
+}
+
+.panel_menu {
+  width: 335px;
+  background-color: white;
+  border-radius: 25%;
+}
+
+/* CSS FOOTER */
+footer a {
+  color: white;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 15px 20px 10px 20px;
+}
+
+#logo_footer {
+  font-size: 17px;
+  margin: 0px 0px 20px 0px;
+}
+
+#big_container_footer {
+  line-height: 10px;
+}
+
+.container_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -20px 0px -20px 0px;
+}
+
+.icon_footer {
+  width: 12px;
+  margin: 0px 12px 0px 0px;
+  color: white;
 }
 /*# sourceMappingURL=menu.css.map */
