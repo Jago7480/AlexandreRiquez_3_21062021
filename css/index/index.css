@@ -324,12 +324,28 @@ header {
   padding: 0px 0px 0px 10px;
 }
 
+.icon_empty_heart {
+  width: 30px;
+  color: black;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
 .icon_heart {
   width: 30px;
   color: #9356DC;
   position: absolute;
   right: 25px;
   bottom: 25px;
+}
+
+.heart:hover .icon_empty_heart, .heart .icon_heart {
+  display: none;
+}
+
+.heart:hover .icon_heart {
+  display: inline;
 }
 
 /* CSS FOOTER */
