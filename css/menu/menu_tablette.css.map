@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,yCAAyC;AAEzC,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK,OAAO,SAAS,EAAE,MAAM;EAE5D,AAAA,IAAI,CAAC;IACD,gBAAgB,EAAE,IAAI;GACzB",
+    "mappings": "AAAA,yCAAyC",
     "sources": [
         "menu_tablette.scss"
     ],

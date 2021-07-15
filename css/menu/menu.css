@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #f6f6f6;
 }
 
 a {
@@ -68,22 +69,42 @@ header {
   width: 20px;
   position: absolute;
   left: 50px;
+  top: 20px;
 }
 
 .img_menu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  position: relative;
 }
 
 .container_titlemenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 35px;
+  height: 100px;
+  padding: 20px;
   background-color: #f6f6f6;
-  border-top-left-radius: 25%;
-  border-top-right-radius: 25%;
-}
-
-#titlemenu {
-  text-align: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+  bottom: 97%;
+  margin: 0px 0px 10px 0px;
 }
 
 .icon_empty_heart {
@@ -91,7 +112,8 @@ header {
   color: black;
   position: absolute;
   right: 25px;
-  bottom: 25px;
+  bottom: 35px;
+  cursor: pointer;
 }
 
 .icon_heart {
@@ -99,7 +121,8 @@ header {
   color: #9356DC;
   position: absolute;
   right: 25px;
-  bottom: 25px;
+  bottom: 35px;
+  cursor: pointer;
 }
 
 .heart:hover .icon_empty_heart, .heart .icon_heart {
@@ -110,10 +133,73 @@ header {
   display: inline;
 }
 
+.titre_menu {
+  margin: 0px 20px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .panel_menu {
   width: 335px;
+  height: 70px;
   background-color: white;
-  border-radius: 25%;
+  border-radius: 15px;
+  margin: 0px 20px 0px 20px;
+}
+
+.text_menu {
+  line-height: 3px;
+  padding: 0px 0px 0px 10px;
+}
+
+#commander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#button_degrade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 50px;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  color: white;
+  -webkit-box-shadow: 0px 5px 4px #cfcfcf;
+          box-shadow: 0px 5px 4px #cfcfcf;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin: 0px 20px 0px 20px;
+}
+
+#button_degrade:hover {
+  -webkit-box-shadow: 0px 5px 4px #8d8d8d;
+          box-shadow: 0px 5px 4px #8d8d8d;
 }
 
 /* CSS FOOTER */

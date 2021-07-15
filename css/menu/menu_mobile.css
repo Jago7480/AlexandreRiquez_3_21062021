@@ -1,21 +1,4 @@
 /* menu_mobile.css - GRAND FORMAT */
-@media only screen and (max-width: 767px) {
-  body {
-    background-color: yellow;
-  }
-}
-
 /* index_mobile.css - MOYEN FORMAT */
-@media only screen and (max-width: 360px) {
-  body {
-    background-color: green;
-  }
-}
-
 /* index_mobile.css - PETIT FORMAT */
-@media only screen and (max-width: 320px) {
-  body {
-    background-color: violet;
-  }
-}
 /*# sourceMappingURL=menu_mobile.css.map */
