@@ -1,3 +1,4 @@
+@import url("../footer.css");
 /* index.css - FORMAT DESKTOP */
 * {
   -webkit-box-sizing: border-box;
@@ -85,6 +86,7 @@ header {
 #localisation:hover {
   -webkit-box-shadow: inset 0px 7px 10px #b3b3b3;
           box-shadow: inset 0px 7px 10px #b3b3b3;
+  background-color: #f1f1f1;
 }
 
 #localisation:hover #text_localisation {
@@ -159,6 +161,8 @@ header {
 #button_degrade:hover {
   -webkit-box-shadow: 0px 5px 4px #8d8d8d;
           box-shadow: 0px 5px 4px #8d8d8d;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a5ce7), to(#ff8bde));
+  background: linear-gradient(0deg, #9a5ce7, #ff8bde);
 }
 
 .fonctionnement {
@@ -356,38 +360,5 @@ header {
 
 .heart:hover .icon_heart {
   display: inline;
-}
-
-/* CSS FOOTER */
-footer a {
-  color: white;
-}
-
-footer {
-  background-color: #353535;
-  color: white;
-  padding: 15px 20px 10px 20px;
-}
-
-#logo_footer {
-  font-size: 17px;
-  margin: 0px 0px 20px 0px;
-}
-
-#big_container_footer {
-  line-height: 10px;
-}
-
-.container_footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: -20px 0px -20px 0px;
-}
-
-.icon_footer {
-  width: 12px;
-  margin: 0px 12px 0px 0px;
-  color: white;
 }
 /*# sourceMappingURL=index.css.map */
