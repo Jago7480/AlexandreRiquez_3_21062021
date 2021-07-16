@@ -1,4 +1,132 @@
 /* menu_mobile.css - GRAND FORMAT */
+@media only screen and (max-width: 767px) {
+  h4 {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+  }
+  p {
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+  }
+  #entrees,
+  #plats,
+  #desserts {
+    padding: 0px 20px 0px 20px;
+  }
+  .img_menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .titre_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 20px 0px 20px 0px;
+    position: relative;
+  }
+  .container_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .panel_menu {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+  }
+}
+
 /* index_mobile.css - MOYEN FORMAT */
+@media only screen and (max-width: 360px) {
+  h4 {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+  }
+  p {
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+  }
+  #entrees,
+  #plats,
+  #desserts {
+    padding: 0px 20px 0px 20px;
+  }
+  .titre_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 20px 0px 20px 0px;
+    position: relative;
+  }
+  .container_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .panel_menu {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+  }
+}
+
 /* index_mobile.css - PETIT FORMAT */
+@media only screen and (max-width: 320px) {
+  h4 {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+  }
+  p {
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+  }
+  #entrees,
+  #plats,
+  #desserts {
+    padding: 0px 20px 0px 20px;
+  }
+  .titre_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 20px 0px 20px 0px;
+    position: relative;
+  }
+  .container_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .panel_menu {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+  }
+}
 /*# sourceMappingURL=menu_mobile.css.map */

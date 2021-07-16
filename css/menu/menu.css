@@ -50,18 +50,16 @@ h6 {
 
 p {
   font-family: 'roboto', sans-serif;
+  font-weight: 100;
 }
 
 strong {
   font-family: 'roboto', sans-serif;
   font-size: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 0px 20px 0px 20px;
+  font-weight: 600;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
 
 header {
@@ -82,7 +80,7 @@ header {
 .icon_arrow {
   width: 20px;
   position: absolute;
-  left: 50px;
+  left: 20px;
   top: 20px;
 }
 
@@ -154,13 +152,13 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px 20px 5px 20px;
+  margin: 20px 20px 20px 20px;
   position: relative;
 }
 
 .titre_menu::after {
   content: "";
-  width: 5%;
+  width: 10%;
   height: 4px;
   background: #99E2D0;
   position: absolute;
@@ -182,9 +180,10 @@ header {
   height: 70px;
   background-color: white;
   border-radius: 15px;
-  margin: 20px;
+  margin: 10px 20px 10px 20px;
   -webkit-box-shadow: 0px 5px 4px #cfcfcf;
           box-shadow: 0px 5px 4px #cfcfcf;
+  position: relative;
 }
 
 .text_menu {
@@ -224,7 +223,7 @@ header {
           box-shadow: 0px 5px 4px #cfcfcf;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  margin: 20px;
+  margin: 30px 20px 70px 20px;
 }
 
 #button_degrade:hover {
