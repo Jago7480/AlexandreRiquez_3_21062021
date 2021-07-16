@@ -61,6 +61,15 @@ p
     font-family: 'roboto', sans-serif;
 }
 
+strong
+{
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 20px 0px 20px;
+}
+
 header
 {
     display: flex;
@@ -104,7 +113,7 @@ header
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     position: absolute;
-    bottom: 97%;
+    bottom: 98%;
     margin: 0px 0px 10px 0px;
 }
 
@@ -113,6 +122,7 @@ header
     width: 30px;
     color: black;
     position: absolute;
+    left: 220px;
     right: 25px;
     bottom: 35px;
     cursor: pointer;
@@ -123,6 +133,7 @@ header
     width: 30px;
     color: #9356DC;
     position: absolute;
+    left: 220px;
     right: 25px;
     bottom: 35px;
     cursor: pointer;
@@ -140,9 +151,11 @@ header
 
 .titre_menu
 {
-    margin: 0px 20px 0px 20px;
     display: flex;
     justify-content: center;
+    margin: 0px 20px 0px 20px;
+    border-bottom: solid #99E2D0;
+    padding-bottom: 10px;
 }
 
 .container_menu
@@ -157,7 +170,8 @@ header
     height: 70px;
     background-color: white;
     border-radius: 15px;
-    margin: 0px 20px 0px 20px;
+    margin: 20px;
+    box-shadow: 0px 5px 4px #cfcfcf;
 }
 
 .text_menu
@@ -184,7 +198,7 @@ header
     color: white;
     box-shadow: 0px 5px 4px #cfcfcf;
     transition: all 0.2s;
-    margin: 0px 20px 0px 20px;
+    margin: 20px;
 }
 
 #button_degrade:hover

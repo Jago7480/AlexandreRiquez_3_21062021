@@ -50,6 +50,18 @@ p {
   font-family: 'roboto', sans-serif;
 }
 
+strong {
+  font-family: 'roboto', sans-serif;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0px 20px 0px 20px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,7 +115,7 @@ header {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   position: absolute;
-  bottom: 97%;
+  bottom: 98%;
   margin: 0px 0px 10px 0px;
 }
 
@@ -111,6 +123,7 @@ header {
   width: 30px;
   color: black;
   position: absolute;
+  left: 220px;
   right: 25px;
   bottom: 35px;
   cursor: pointer;
@@ -120,6 +133,7 @@ header {
   width: 30px;
   color: #9356DC;
   position: absolute;
+  left: 220px;
   right: 25px;
   bottom: 35px;
   cursor: pointer;
@@ -134,13 +148,15 @@ header {
 }
 
 .titre_menu {
-  margin: 0px 20px 0px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0px 20px 0px 20px;
+  border-bottom: solid #99E2D0;
+  padding-bottom: 10px;
 }
 
 .container_menu {
@@ -157,7 +173,9 @@ header {
   height: 70px;
   background-color: white;
   border-radius: 15px;
-  margin: 0px 20px 0px 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 5px 4px #cfcfcf;
+          box-shadow: 0px 5px 4px #cfcfcf;
 }
 
 .text_menu {
@@ -194,7 +212,7 @@ header {
           box-shadow: 0px 5px 4px #cfcfcf;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  margin: 0px 20px 0px 20px;
+  margin: 20px;
 }
 
 #button_degrade:hover {
