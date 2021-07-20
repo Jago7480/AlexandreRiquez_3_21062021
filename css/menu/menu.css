@@ -54,6 +54,8 @@ p {
   font-family: 'roboto', sans-serif;
   font-weight: 100;
   font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 strong {
@@ -308,9 +310,6 @@ header {
 .text_menu {
   line-height: 3px;
   padding: 0px 20px 0px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .text_description {
@@ -323,7 +322,6 @@ header {
 }
 
 .container_check {
-  display: none;
   position: absolute;
   right: 0%;
   top: 0%;
@@ -332,43 +330,36 @@ header {
   width: 60px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  -webkit-animation: selection 0.3s linear;
-          animation: selection 0.3s linear;
+  -webkit-animation: out 0.3s linear;
+          animation: out 0.3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .panel_menu:hover .container_check {
-  display: block;
-  position: absolute;
-  right: 0%;
-  top: 0%;
-  background: #99E2D0;
-  height: 70px;
-  width: 60px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  -webkit-animation: selection 0.3s linear;
-          animation: selection 0.3s linear;
+  -webkit-animation: in 0.3s linear;
+          animation: in 0.3s linear;
 }
 
-@-webkit-keyframes selection {
-  from {
+@-webkit-keyframes in {
+  0% {
     -webkit-transform: translateX(60px);
             transform: translateX(60px);
   }
-  to {
+  100% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
 }
 
-@keyframes selection {
-  from {
-    -webkit-transform: translateX(60px);
-            transform: translateX(60px);
-  }
-  to {
+@-webkit-keyframes out {
+  0% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
   }
 }
 

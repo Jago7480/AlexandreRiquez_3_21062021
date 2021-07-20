@@ -65,6 +65,8 @@ p
     font-family: 'roboto', sans-serif;
     font-weight: 100;
     font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 strong
@@ -255,9 +257,6 @@ header
 {
     line-height: 3px;
     padding: 0px 20px 0px 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .text_description
@@ -268,7 +267,6 @@ header
 
 .container_check
 {
-    display: none;
     position: absolute;
     right: 0%;
     top: 0%;
@@ -277,29 +275,30 @@ header
     width: 60px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: selection 0.3s linear;
+    animation: out 0.3s linear;
+    animation-fill-mode: forwards;
 }
 
 .panel_menu:hover .container_check
 {
-    display: block;
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    background: #99E2D0;
-    height: 70px;
-    width: 60px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    animation: selection 0.3s linear;
+    animation: in 0.3s linear;
 }
 
-@keyframes selection {
-    from {
+@-webkit-keyframes in {
+    0% {
         transform: translateX(60px);
     }
-    to {
+    100% {
         transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes out {
+    0% {
+        transform:translateX(0px);
+    }
+    100% {
+        transform:translateX(60px)
     }
 }
 
