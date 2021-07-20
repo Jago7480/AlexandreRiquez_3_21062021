@@ -179,12 +179,6 @@ header
     align-items: center;
     position: absolute;
     left: -15px;
-    transition: all 0.2s;
-}
-
-.panel_fonctionnement:hover .numero_fonctionnement /* Hover des numeros fonctionnement */
-{
-    transform: scale(1.1);
 }
 
 .icon_fonctionnement
@@ -304,23 +298,25 @@ header
     position: absolute;
     right: 25px;
     bottom: 25px;
+
 }
 
 .icon_heart
 {
     width: 30px;
-    color: #9356DC;
+    fill: url(#gradient);
     position: absolute;
     right: 25px;
     bottom: 25px;
+    transition: opacity 0.2s ease-in;
 }
 
 .heart:hover .icon_empty_heart, .heart .icon_heart
 {
-    display: none;
+    opacity: 0;
 }
 
 .heart:hover .icon_heart
 {
-    display: inline;
+    opacity: 1;
 }
