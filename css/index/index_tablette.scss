@@ -12,6 +12,11 @@
         scroll-behavior: smooth;
     }
 
+    .loading
+    {
+        top: 20%;
+    }
+
     .fonctionnement
     {
         display: flex;
@@ -71,6 +76,11 @@
     html
     {
         scroll-behavior: smooth;
+    }
+
+    .loading
+    {
+        top: 30%;
     }
 
     .fonctionnement

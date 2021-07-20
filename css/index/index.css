@@ -11,6 +11,39 @@ html {
 
 body {
   margin: 0;
+  position: relative;
+  -webkit-animation: blank 2s ease;
+          animation: blank 2s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes blank {
+  from {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.5;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blank {
+  from {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.5;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 a {
@@ -62,6 +95,63 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/* CSS du loading spinner */
+.loading {
+  -webkit-animation: loading 2s ease;
+          animation: loading 2s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  border: solid 10px #cfcfcf;
+  border-top: solid 10px #9356DC;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 99;
+}
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
 }
 
 #localisation {

@@ -14,6 +14,23 @@ html
 body
 {
     margin: 0;
+    position: relative;
+    animation: blank 2s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blank
+{
+    from {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 0.5;
+        transition: 0.2s ease;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 a /* CSS des liens */
@@ -68,6 +85,43 @@ header
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+/* CSS du loading spinner */
+
+.loading
+{
+    animation: loading 2s ease;
+    animation-fill-mode: forwards;
+    border: solid 10px #cfcfcf;
+    border-top: solid 10px #9356DC;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 99;
+}
+
+@keyframes loading
+{
+    from {
+        transform:rotate(0deg);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+        transition: 0.2s ease;
+    }
+    to {
+        transform:rotate(360deg);
+        opacity: 0;
+    }
 }
 
 #localisation /* CSS de la banderole Paris, Belleville */

@@ -7,6 +7,9 @@
   html {
     scroll-behavior: smooth;
   }
+  .loading {
+    top: 15%;
+  }
   .fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -65,6 +68,9 @@
 
 /* index_mobile.css - MOYEN FORMAT */
 @media only screen and (max-width: 360px) {
+  .loading {
+    top: 10%;
+  }
   #title_fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -87,6 +93,9 @@
 
 /* index_mobile.css - PETIT FORMAT */
 @media only screen and (max-width: 320px) {
+  .loading {
+    top: 10%;
+  }
   .panel_fonctionnement {
     width: 280px;
     margin: 10px 5px 10px 15px;
