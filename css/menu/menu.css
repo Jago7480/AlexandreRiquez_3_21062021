@@ -352,7 +352,29 @@ header {
   }
 }
 
+@keyframes in {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
 @-webkit-keyframes out {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+}
+
+@keyframes out {
   0% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);

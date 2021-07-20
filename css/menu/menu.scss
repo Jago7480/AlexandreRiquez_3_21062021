@@ -284,7 +284,7 @@ header
     animation: in 0.3s linear;
 }
 
-@-webkit-keyframes in {
+@keyframes in {
     0% {
         transform: translateX(60px);
     }
@@ -293,7 +293,7 @@ header
     }
 }
 
-@-webkit-keyframes out {
+@keyframes out {
     0% {
         transform:translateX(0px);
     }
