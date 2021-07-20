@@ -56,7 +56,8 @@ h5
 
 h6
 {
-    font-family: 'roboto', sans-serif;
+    font-family: 'shrikhand', sans-serif;
+    font-size: 24px;
 }
 
 p
@@ -71,9 +72,6 @@ strong
     font-family: 'roboto', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
 }
 
 header
@@ -232,7 +230,7 @@ header
     background: #99E2D0;
     position: absolute;
     bottom: -10px;
-    left: 50;
+    left: 45%;
 }
 
 .container_menu
@@ -250,15 +248,84 @@ header
     margin: 10px 20px 10px 20px;
     box-shadow: 0px 5px 4px #cfcfcf;
     position: relative;
+    overflow: hidden;
 }
 
 .text_menu
 {
     line-height: 3px;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 20px 0px 10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.text_description
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_check
+{
+    display: none;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background: #99E2D0;
+    height: 70px;
+    width: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: selection 0.3s linear;
+}
+
+.panel_menu:hover .container_check
+{
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background: #99E2D0;
+    height: 70px;
+    width: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: selection 0.3s linear;
+}
+
+@keyframes selection {
+    from {
+        transform: translateX(60px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.icon_check
+{
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+    width: 23px;
+    height: 23px;
+    color: #99E2D0;
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    animation: spin 0.3s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin
+{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 #commander

@@ -17,6 +17,11 @@
         position: relative;
     }
 
+    .titre_menu::after
+    {
+        left: 0%;
+    }
+
     .container_menu
     {
         display: flex;
