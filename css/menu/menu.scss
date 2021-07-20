@@ -313,17 +313,31 @@ header
     position: absolute;
     top: 35%;
     right: 35%;
-    animation: spin 0.3s linear;
+    animation: spinout 0.3s linear;
     animation-fill-mode: forwards;
 }
 
-@keyframes spin
+.panel_menu:hover .icon_check
+{
+    animation: spinin 0.3s linear;
+}
+
+@keyframes spinin
 {
     from {
         transform:rotate(0deg);
     }
     to {
         transform:rotate(360deg);
+    }
+}
+
+@keyframes spinout {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
     }
 }
 

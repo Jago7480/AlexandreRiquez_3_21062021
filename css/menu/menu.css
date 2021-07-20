@@ -395,13 +395,18 @@ header {
   position: absolute;
   top: 35%;
   right: 35%;
-  -webkit-animation: spin 0.3s linear;
-          animation: spin 0.3s linear;
+  -webkit-animation: spinout 0.3s linear;
+          animation: spinout 0.3s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes spin {
+.panel_menu:hover .icon_check {
+  -webkit-animation: spinin 0.3s linear;
+          animation: spinin 0.3s linear;
+}
+
+@-webkit-keyframes spinin {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -412,7 +417,7 @@ header {
   }
 }
 
-@keyframes spin {
+@keyframes spinin {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -420,6 +425,28 @@ header {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinout {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes spinout {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
