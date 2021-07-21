@@ -54,8 +54,6 @@ p {
   font-family: 'roboto', sans-serif;
   font-weight: 100;
   font-size: 14px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 strong {
@@ -296,6 +294,9 @@ header {
 }
 
 .panel_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 335px;
   height: 70px;
   background-color: white;
@@ -303,13 +304,16 @@ header {
   margin: 10px 20px 10px 20px;
   -webkit-box-shadow: 0px 5px 4px #cfcfcf;
           box-shadow: 0px 5px 4px #cfcfcf;
-  position: relative;
   overflow: hidden;
 }
 
 .text_menu {
   line-height: 3px;
+  width: 100%;
   padding: 0px 20px 0px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .text_description {
@@ -322,12 +326,18 @@ header {
 }
 
 .container_check {
-  position: absolute;
-  right: 0%;
-  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #99E2D0;
   height: 70px;
-  width: 60px;
+  width: 70px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   -webkit-animation: out 0.3s linear;
@@ -343,8 +353,8 @@ header {
 
 @-webkit-keyframes in {
   0% {
-    -webkit-transform: translateX(60px);
-            transform: translateX(60px);
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
   }
   100% {
     -webkit-transform: translateX(0px);
@@ -354,8 +364,8 @@ header {
 
 @keyframes in {
   0% {
-    -webkit-transform: translateX(60px);
-            transform: translateX(60px);
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
   }
   100% {
     -webkit-transform: translateX(0px);
@@ -369,8 +379,8 @@ header {
             transform: translateX(0px);
   }
   100% {
-    -webkit-transform: translateX(60px);
-            transform: translateX(60px);
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
   }
 }
 
@@ -380,8 +390,8 @@ header {
             transform: translateX(0px);
   }
   100% {
-    -webkit-transform: translateX(60px);
-            transform: translateX(60px);
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
   }
 }
 
@@ -392,9 +402,6 @@ header {
   width: 23px;
   height: 23px;
   color: #99E2D0;
-  position: absolute;
-  top: 35%;
-  right: 35%;
   -webkit-animation: spinout 0.3s linear;
           animation: spinout 0.3s linear;
   -webkit-animation-fill-mode: forwards;
