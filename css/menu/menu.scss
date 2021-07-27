@@ -65,6 +65,9 @@ p
     font-family: 'roboto', sans-serif;
     font-weight: 100;
     font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 header
@@ -245,6 +248,11 @@ header
     position: relative;
 }
 
+.titre_plat
+{
+    height: 0px;
+}
+
 .text_menu
 {
     line-height: 0px;
@@ -267,7 +275,8 @@ header
 
 .text_description
 {
-    width: 100%;
+    width: 375px;
+    height: 14px;
 }
 
 .prix
@@ -276,9 +285,7 @@ header
     font-size: 16px;
     font-weight: 600;
     width: 30px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    // overflow: hidden;
+    margin: -10px 0px 0px 0px;
 }
 
 .container_check
