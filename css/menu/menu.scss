@@ -67,13 +67,6 @@ p
     font-size: 14px;
 }
 
-strong
-{
-    font-family: 'roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-}
-
 header
 {
     display: flex;
@@ -249,26 +242,49 @@ header
     margin: 10px 20px 10px 20px;
     box-shadow: 0px 5px 4px #cfcfcf;
     overflow: hidden;
+    position: relative;
 }
 
 .text_menu
 {
-    line-height: 3px;
-    width: 100%;
+    line-height: 0px;
+    width: calc(100%);
     padding: 0px 20px 0px 10px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    transition: 0.3s all linear;
+}
+
+.panel_menu:hover .text_menu
+{
+    width: calc(100% - 70px);
+}
+
+.description_prix
+{
+    margin: -5px 0px 0px 0px;
+    display: flex;
+    align-items: center;
 }
 
 .text_description
 {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+}
+
+.prix
+{
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    // overflow: hidden;
 }
 
 .container_check
 {
+    position: absolute;
+    right: -70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,31 +293,12 @@ header
     width: 70px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: out 0.3s linear;
-    animation-fill-mode: forwards;
+    transition: 0.3s all linear;
 }
 
 .panel_menu:hover .container_check
 {
-    animation: in 0.3s linear;
-}
-
-@keyframes in {
-    0% {
-        transform: translateX(70px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-@keyframes out {
-    0% {
-        transform:translateX(0px);
-    }
-    100% {
-        transform:translateX(70px);
-    }
+    right: 0px;
 }
 
 .icon_check
@@ -312,32 +309,12 @@ header
     width: 23px;
     height: 23px;
     color: #99E2D0;
-    animation: spinout 0.3s linear;
-    animation-fill-mode: forwards;
+    transition: all 0.3s linear;
 }
 
 .panel_menu:hover .icon_check
 {
-    animation: spinin 0.3s linear;
-}
-
-@keyframes spinin
-{
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-
-@keyframes spinout {
-    from {
-        transform:rotate(360deg);
-    }
-    to {
-        transform:rotate(0deg);
-    }
+    transform: rotate(360deg);
 }
 
 #commander

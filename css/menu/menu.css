@@ -56,12 +56,6 @@ p {
   font-size: 14px;
 }
 
-strong {
-  font-family: 'roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,27 +299,47 @@ header {
   -webkit-box-shadow: 0px 5px 4px #cfcfcf;
           box-shadow: 0px 5px 4px #cfcfcf;
   overflow: hidden;
+  position: relative;
 }
 
 .text_menu {
-  line-height: 3px;
-  width: 100%;
+  line-height: 0px;
+  width: calc(100%);
   padding: 0px 20px 0px 10px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
 }
 
-.text_description {
+.panel_menu:hover .text_menu {
+  width: calc(100% - 70px);
+}
+
+.description_prix {
+  margin: -5px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text_description {
+  width: 100%;
+}
+
+.prix {
+  font-family: 'roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  width: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .container_check {
+  position: absolute;
+  right: -70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,59 +354,12 @@ header {
   width: 70px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  -webkit-animation: out 0.3s linear;
-          animation: out 0.3s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
 }
 
 .panel_menu:hover .container_check {
-  -webkit-animation: in 0.3s linear;
-          animation: in 0.3s linear;
-}
-
-@-webkit-keyframes in {
-  0% {
-    -webkit-transform: translateX(70px);
-            transform: translateX(70px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@keyframes in {
-  0% {
-    -webkit-transform: translateX(70px);
-            transform: translateX(70px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@-webkit-keyframes out {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(70px);
-            transform: translateX(70px);
-  }
-}
-
-@keyframes out {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(70px);
-            transform: translateX(70px);
-  }
+  right: 0px;
 }
 
 .icon_check {
@@ -402,59 +369,13 @@ header {
   width: 23px;
   height: 23px;
   color: #99E2D0;
-  -webkit-animation: spinout 0.3s linear;
-          animation: spinout 0.3s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .panel_menu:hover .icon_check {
-  -webkit-animation: spinin 0.3s linear;
-          animation: spinin 0.3s linear;
-}
-
-@-webkit-keyframes spinin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spinin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spinout {
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes spinout {
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 #commander {
